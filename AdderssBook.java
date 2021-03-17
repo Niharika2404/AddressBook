@@ -33,6 +33,64 @@ public class AdderssBook {
 			this.phoneNumber = phoneNumber;
 			this.zipCode = zipCode;
 		}
+	
+	
+	private static void modify() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Change FirstName (y/n)? ");
+		char ch = sc.nextLine().charAt(0);
+		if(ch == 'Y' || ch == 'y') {
+			System.out.println("Enter the FirstName: ");
+			String firstName = sc.nextLine();
+			sc.nextLine();
+		}
+		
+		System.out.println("Change LastName (y/n)? ");
+		ch = sc.nextLine().charAt(0);
+		if(ch == 'Y' || ch == 'y') {
+			System.out.println("Enter the LastName: ");
+			String lastName = sc.nextLine();
+			sc.nextLine();
+		}
+	
+		System.out.println("Change State (y/n)? ");
+		ch = sc.nextLine().charAt(0);
+		if(ch == 'Y' || ch == 'y') {
+			System.out.println("Enter the State: ");
+			String state = sc.nextLine();
+			sc.nextLine();
+		}
+		
+		System.out.println("Change City (y/n)? ");
+		ch = sc.nextLine().charAt(0);
+		if(ch == 'Y' || ch == 'y') {
+			System.out.println("Enter the City: ");
+			String city = sc.nextLine();
+			sc.nextLine();
+		}
+		
+		System.out.println("Change email (y/n)? ");
+		ch = sc.nextLine().charAt(0);
+		if(ch == 'Y' || ch == 'y') {
+			System.out.println("Enter the email: ");
+			String email = sc.nextLine();
+			sc.nextLine();
+		}
+		
+		System.out.println("Change PhoneNumber (y/n)? ");
+		ch = sc.nextLine().charAt(0);
+		if(ch == 'y' || ch == 'Y') {
+			System.out.println("Enter the PhoneNumnber: ");
+			int phoneNumber = sc.nextInt();
+			sc.hasNextLine();
+		}
+		System.out.println("Change ZipCode (y/n)? ");
+		ch = sc.nextLine().charAt(0);
+		if(ch == 'y' || ch == 'Y') {
+			System.out.println("Enter the ZipCode: ");
+			int zipCode = sc.nextInt();
+			sc.hasNextLine();
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -40,6 +98,8 @@ public class AdderssBook {
 		contactDetails();
 		PersonAddress personaddress = new PersonAddress();
 		personaddress.PersonAddress();
+		
+		modify();
 	}
-
+	
 }
