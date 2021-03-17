@@ -5,30 +5,41 @@ public class AdderssBook {
 	private static void contactDetails() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Contac Details of a person: ");
-		String firstName = sc.nextLine();
 		System.out.println("Enter the First Name: ");
-		String lastName = sc.nextLine();
+		String firstName = sc.nextLine();
 		System.out.println("Enter the Last Name: ");
-		String address = sc.nextLine();
+		String lastName = sc.nextLine();
 		System.out.println("Enter the Address: ");
-		String city = sc.nextLine();
+		String address = sc.nextLine();
 		System.out.println("Enter the City: ");
-		String state = sc.nextLine();
+		String city = sc.nextLine();
 		System.out.println("Enter the State: ");
-		int zip = sc.nextInt();
+		String state = sc.nextLine();
 		System.out.println("Enter the ZipCode: ");
-		int phoneNumber = sc.nextInt();
+		int zip = sc.nextInt();
 		System.out.println("Enter the PhoneNumber: ");
+		int phoneNumber = sc.nextInt();
+		System.out.println("Enter the Email: ");
 		String email = sc.nextLine();
-		System.out.println("Enter the EmailID: ");
 		
 		
 	}
-	
+	private class PersonAddress(String args[], int PhoneNumber , int ZipCode) {
+		public void PersonAddress() {
+			this.firstName = args[0];
+			this.lastName = args[0];
+			this.city = args[0];
+			this.state = args[0];
+			this.phoneNumber = phoneNumber;
+			this.zipCode = zipCode;
+		}
+	}
 	
 	public static void main(String[] args) {
 		System.out.println("Welcome To The Address Book Program!!");
 		contactDetails();
+		PersonAddress personaddress = new PersonAddress();
+		personaddress.PersonAddress();
 	}
 
 }
